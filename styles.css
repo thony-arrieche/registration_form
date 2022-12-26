@@ -1,0 +1,165 @@
+* {box-sizing: border-box}
+
+body {
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1.2;
+}
+
+/*Center input section*/
+#user-input-col {
+    margin-top: 25px;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+    background-color: #e06455;
+    color: white;
+  }
+
+.github {
+  background-color: #4a4a4a;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 215px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.bottom-container a {
+    color: #ffffff;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* HIDE the vertical line */
+  .vl {
+    display: none;
+  }
+  /* SHOW the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+  /*center text for social btns on small screens*/
+    .btn {
+        text-align: center;
+    }
+    /*BRING USER INPUT BACK UP*/
+  #user-input-col {
+    margin-top: 4px;
+    }
+}
+/*FOR LARGER SCREENS*/
+@media screen and (max-width: 1400px) {
+    /*containers dont overspan and gets centered in large screens*/
+    .container, .bottom-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+}
+
+/*ADD smoother animation when style changes*/
+/*TRANSTION when screen size swaps from one to 2 columns*/
