@@ -2,10 +2,10 @@
 
 body {
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    font-family: 'Lucida Sans','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
 
-/* style the container */
+/* CONTAINER STYLE */
 .container {
   position: relative;
   border-radius: 5px;
@@ -17,7 +17,7 @@ h2 {
     text-align: center;
 }
 
-/* style inputs and link buttons */
+/* STYLE FOR INPUTS and BTNS */
 input,
 .btn {
   width: 100%;
@@ -37,12 +37,12 @@ input:hover,
   opacity: 1.2;
 }
 
-/*Center input section*/
+/*CENTER INPUT SECTION*/
 #user-input-col {
     margin-top: 25px;
 }
 
-/* add appropriate colors to fb, twitter and google buttons */
+/* ADD APPROPRIATE COLORS TO SOCIAL BTNS */
 .fb {
   background-color: #3B5998;
   color: white;
@@ -63,7 +63,7 @@ input:hover,
   color: white;
 }
 
-/* style the submit button */
+/* SUBMIT BTN STYLE */
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -81,6 +81,12 @@ input[type=submit]:hover {
   margin: auto;
   padding: 0 50px;
   margin-top: 6px;
+}
+
+/*One column layout*/
+.col-1 {
+  padding: 10px 60px;
+  line-height: 24px;
 }
 
 /* Clear floats after the columns */
@@ -124,7 +130,18 @@ input[type=submit]:hover {
 }
 
 .bottom-container a {
-    color: #ffffff;
+    color: #fff;
+}
+
+.subtext { 
+  text-align: center;
+  font-size: 15px;
+}
+
+.bottom-sub {
+  color: #fff;
+  margin-top: 0px;
+  display: block;
 }
 
 /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
@@ -132,6 +149,7 @@ input[type=submit]:hover {
   .col {
     width: 100%;
     margin-top: 0;
+    transition: all 200ms ease;
   }
   /* HIDE the vertical line */
   .vl {
@@ -154,12 +172,12 @@ input[type=submit]:hover {
 /*FOR LARGER SCREENS*/
 @media screen and (max-width: 1400px) {
     /*containers dont overspan and gets centered in large screens*/
-    .container, .bottom-container {
+    .container, 
+    .bottom-container {
         max-width: 800px;
         margin: 0 auto;
-    }
+      }
+
+    .col {transition: all 200ms ease;}/**/
 
 }
-
-/*ADD smoother animation when style changes*/
-/*TRANSTION when screen size swaps from one to 2 columns*/
