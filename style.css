@@ -1,0 +1,31 @@
+/*SOCIAL BUTTONS*/
+.btn-facebook, .btn-twitter,.btn-google {
+    color: #fff;
+}
+
+.btn-facebook {
+    background-color: #3B5998;
+  }
+.btn-twitter {
+    background: #00aced;
+  }
+.btn-google {
+    background: #c32f10;
+}
+
+.btn-facebook:hover {
+    background-color: #2b4479;
+    color: #fff;
+}
+
+.btn-twitter:hover {
+    background-color: #128fbd;
+    color: #fff;
+}
+
+.btn-google:hover {
+    background: #97230c;
+    color: #fff;
+}
+
+/*BODY OPTIONS*/

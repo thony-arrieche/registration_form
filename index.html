@@ -4,53 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/bf50564c9b.js" crossorigin="anonymous"></script>
     <title>Log In | Register</title>
 </head>
 <body>
-    <div class="container">
-        <form action="/action_page.php">
-            <div class="row">
-                <h2>Login with Social Media</h2>
-                <div class="vl">
-                    <span class="vl-innertext">or</span>
-                </div>
+    <div class="container col-sm-6 col-lg-6 col-xl-4">
 
-                <div class="col">
-                    <a href="#" class="fb btn"><i class="fa fa-facebook fa fw"></i> Login with Facebook
-                    </a>
-                    <a href="#" class="twitter btn"><i class="fa-brands fa-square-twitter"></i> Login with Twitter
-                    </a>
-                    <a href="#" class="google btn"><i class="fa-brands fa-google"></i> Login with Google
-                      </a>
-                    <a href="#" class="github btn"><i class="fa-brands fa-github"></i> Login with Github
-                    </a>
-                </div>
-
-                <div class="col" id="user-input-col">
-                    <div class="hide-md-lg">
-                        <p>or sign in manually:</p>
-                    </div>
-                    <input type="text" name="username" placeholder="Username" required>
-                    <input type="password" name="password" placeholder="Password" required>
-                    <input type="submit" value="Login">
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <div class="bottom-container">
+        <div class="text-center p-4">
+            <h2>
+                Login with Social Media
+                <small class="text-muted">or email</small>
+            </h2>
+        </div>
         <div class="row">
-            <div class="col">
-                <a href="sign-up.html" class="btn">Sign Up</a>
-            </div>
-            <div class="col">
-                <a href="" class="btn">Forgot password?</a>
+            <div class="btn-group-vertical col">
+                <a href="#" class="btn btn-facebook"><i class="fa fa-facebook fa fw"></i> Facebook
+                </a>
+                <a href="#" class="btn btn-twitter"><i class="fa-brands fa-square-twitter"></i> Twitter
+                </a>
+                <a href="#" class="btn btn-google"><i class="fa-brands fa-google"></i> Google
+                </a>
+                <a href="#" class="btn btn-dark"><i class="fa-brands fa-github"></i> Github
+                </a>
             </div>
         </div>
+        <div class="row">
+            <div class="col my-3">
+                <p class="text-center text-muted">or sign in</p>
+            </div>
+        </div>
+        <div class="col-sm">
+            <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group">
+                    <div class="col-sm">
+                        <input class="form-control" type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="col-sm my-2">
+                        <input type="password" name="password" placeholder="Password" class="form-control" required>
+                    </div>
+                    <div class="col-sm my-2">
+                        <input class="form-control btn-success" type="submit" value="Submit">
+                    </div>
+                    <div class="col-sm my-2">
+                        <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
 
+        <div class="row text-center ">
+            <div class="col">
+                <a href="sign-up.html" class="btn btn-outline-info">Sign Up</a>
+            </div>
+            <div class="col">
+                <a href="#" class="btn btn-outline-info btn-fluid">Forgot password?</a>
+            </div>
+        </div>
+        <!--END OF BOTTOM CONTAINER-->
     </div>
-    
+    <!--END OF MAIN-->
+
 </body>
 </html>
